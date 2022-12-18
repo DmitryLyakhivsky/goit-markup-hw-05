@@ -19,7 +19,8 @@
         <div class="container header-container">
             <!-- Навигация на другие страницы -->
             <nav class="header-nav">
-                <a class="header-logo link" lang="en" href="./index.html">Web<span class="header-logo-text">Studio</span></a>
+                <a class="header-logo link" lang="en" 
+                  href="./index.html">Web<span class="header-logo-text">Studio</span></a>
                 <ul class="header-nav-items list">
                     <li class="header-nav-item"><a class="header-nav-link link current" href="./index.html">Студія</a> </li>
                     <li class="header-nav-item"><a class="header-nav-link link" href="./portfolio.html">Портфоліо</a> </li>
@@ -50,7 +51,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn hero-btn-text" type="button">Замовити послугу</button>
+                <button class="hero-btn hero-btn-text" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!-- Секция приемущества -->
@@ -65,8 +66,8 @@
                             </svg>
                         </div>
                         <h3 class="scills-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="scills-text">Ідейні міркування, і навіть початок повсякденної роботи з формування
-                            позиції.
+                        <p class="scills-text">Ідейні міркування, 
+                            і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
                     <li class="scills-item">
@@ -76,8 +77,8 @@
                             </svg>
                         </div>
                         <h3 class="scills-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="scills-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
-                            себе.
+                        <p class="scills-text">Завдання організації, 
+                            особливо рамки і місце навчання кадрів тягне у себе.
                         </p>
                     </li>
                     <li class="scills-item">
@@ -96,8 +97,8 @@
                             </svg>
                         </div>
                         <h3 class="scills-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="scills-text">Значимість цих проблем настільки очевидна, що реалізація планових
-                            завдань.
+                        <p class="scills-text">Значимість цих проблем настільки очевидна,
+                             що реалізація планових завдань.
                         </p>
                     </li>
                 </ul>
@@ -110,15 +111,18 @@
                 <ul class="work-items list">
                     <li class="work-item">
                         <img class="work-image" src="./images/picture1" alt="Людина набирає текст на планшеті">
+                         <h3 class="work-item-subtitle">Десктопні додатки</h3>
                     </li>
 
                     <li class="work-item">
                         <img class="work-image" src="./images/picture2" alt="На екрані ноутбука макети смартфонів">
+                      <h3 class="work-item-subtitle">Мобільні додатки</h3>
                     </li>
 
                     <li class="work-item">
                         <img class="work-image" src="./images/picture3"
                             alt="Людина обирає колір графіки на екрані планшета">
+                            <h3 class="work-item-subtitle">Дизайнерські рішення</h3>
                     </li>
                 </ul>
             </div>
@@ -355,21 +359,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-items-flex">
-                <div class="footer-item-flex"><a class="footer-logo link" lang="en" href="./index.html">Web<span
+                <div class="footer-item-flex">
+                    <a class="footer-logo link" lang="en" href="./index.html">Web<span
                             class="footer-logo-text">Studio</span></a>
                     <!-- Адрес компании -->
                     <address class="footer-address">
                         <ul class="footer-address-items list">
-                            <li class="address-item"><a class="address-link footer-address-contact link" href="
-                                            https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                                    rel="noopener noreferrer nofollow">м.
-                                    Київ, пр-т Лесі
+                            <li class="address-item">
+                                <a class="address-link footer-address-contact link" 
+                                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                    rel="noopener noreferrer nofollow">
+                                    м.Київ, пр-т Лесі
                                     Українки, 26</a></li>
-                            <li class="address-item"><a class="address-link link"
+                            <li class="address-item">
+                                <a class="address-link link"
                                     href="mailto:info@devstudio.com">info@devstudio.com</a>
                             </li>
-                            <li class="address-item"><a class="address-link link" href="tel:+380961111111">+38 096 111
-                                    11 11</a>
+                            <li class="address-item">
+                                <a class="address-link link" href="tel:+380961111111">
+                                    +38 096 111 11 11</a>
                             </li>
                         </ul>
                     </address>
@@ -416,6 +424,16 @@
         </div>
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" type="button" data-modal-close>
+                <svg class="svg-modal-close">
+                    <use href="./images/icons.svg#icon-closemodal"></use>
+                </svg>
+            </button>
+            </div>
+            </div>
+            <script src="./js/modal.js"></script>
 </body>
 
 </html>
